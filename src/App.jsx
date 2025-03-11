@@ -10,6 +10,7 @@ const SocialAccount = lazy(() => import('./Pages/SocialAccounts.jsx'))
 const Scheduler = lazy(() => import('./Pages/Scheduler.jsx'))
 const Post = lazy(() => import("./Pages/Posts.jsx")) 
 const PrivacyPolicy =  lazy(()=> import("./Pages/PrivacyPolicy.jsx"))
+const TermsOfService = lazy(()=>import("./Pages/TermsOfService.jsx"))
 // Importing the Loading component for the fallback
 import { useDispatch, useSelector } from 'react-redux';
 import Loading from './Components/Loading.jsx';
@@ -60,6 +61,7 @@ const App = () => {
 
             </Route>
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route
               path='/login'
               element={
